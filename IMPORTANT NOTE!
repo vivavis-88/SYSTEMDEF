@@ -1,0 +1,79 @@
+# BOOTH: setup guide
+
+A log system with Personal and Business workspaces, roles, PINs and a sales log.
+Stack: PHP 8 (MVC, PDO), PostgreSQL, Bootstrap 5, DataTables, JavaScript.
+
+## 1. What you need installed
+- Laragon (Apache and PHP) with the project inside `C:\laragon\www\`
+- PostgreSQL and pgAdmin
+- Git
+
+## 2. Get the code
+Open a terminal in `C:\laragon\www` and run:
+
+    git clone <repo-url> BOOTH
+    cd BOOTH
+
+The folder must be named `BOOTH`, or you must change `BASE_URL` in step 4.
+
+## 3. Create the database
+Run these in the project folder. Enter your PostgreSQL password when asked.
+
+    createdb -U postgres logsystem
+    psql -U postgres -d logsystem -f database/schema.sql
+    psql -U postgres -d logsystem -f database/seed.sql
+
+If `createdb` or `psql` is not recognized, add PostgreSQL's `bin` folder to your PATH, or do the same steps in pgAdmin:
+create a database named `logsystem`, open Query Tool, then run `schema.sql` followed by `seed.sql`.
+
+Warning: `schema.sql` drops and recreates every table. Use it for development only.
+
+## 4. Configure
+    copy config\database.example.php config\database.php
+
+Open `config/database.php` and put in your own PostgreSQL password.
+Open `config/app.php` and check that `BASE_URL` matches your folder:
+
+    const BASE_URL = 'http://localhost/BOOTH';
+
+## 5. Turn on the PostgreSQL driver in PHP
+In Laragon: Menu > PHP > Extensions, tick `pdo_pgsql` and `pgsql`, then Stop All and Start All.
+(Or open `php.ini` and remove the `;` before `extension=pdo_pgsql` and `extension=pgsql`.)
+
+## 6. Run it
+Start Laragon (Apache), then open:
+
+- Workspace page (cashiers): http://localhost/BOOTH/w/amaya-booth
+- Owner / Admin login: http://localhost/BOOTH/w/amaya-booth/staff
+
+Demo accounts (from `seed.sql`, development only):
+
+| Who         | Login                           | Password            | PIN    |
+|-------------|---------------------------------|---------------------|--------|
+| Owner       | owner@example.com               | Booth#Demo2026pw    | 482916 |
+| Cashier One | pick the card on the workspace page | (none)          | 482916 |
+
+## 7. Optional
+`npm install` is NOT needed to run the system. The front-end libraries are already
+copied into `assets/vendor/`. Only run it if you want to refresh those copies from `node_modules`.
+
+## How the code is organized
+Every request goes through `index.php`:
+
+    Browser -> index.php -> Router -> Controller -> Model -> Database
+                                          |
+                                          +-> View (display only)
+
+- `controllers/`  read input, check login, CSRF and permissions, then pick a view. No HTML, no SQL.
+- `models/`       all SQL and validation (PDO prepared statements).
+- `views/`        display only. `views/layout/` holds the shared header, sidebar and footer.
+- `core/`         shared classes: Router, Session, Csrf, Model, BaseController, Nav.
+- `config/`       app settings and database connection.
+- `assets/`       css, js, and vendor libraries (Bootstrap, DataTables, jQuery).
+- `database/`     schema.sql and seed.sql.
+
+## Troubleshooting
+- "could not find driver": step 5 was skipped.
+- Apache "Not Found" page: check the URL starts with `/BOOTH/` and `BASE_URL` is correct.
+- Blank styling: hard-refresh with Ctrl+Shift+R.
+- Database errors are logged to `storage/logs/app.log`.

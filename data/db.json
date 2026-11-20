@@ -1,0 +1,336 @@
+{
+    "rev": 23,
+    "settings": {
+        "eventName": "AMAYA Booth",
+        "numDays": 4,
+        "shareRate": 15,
+        "amayaOwners": "AMAYA",
+        "days": {
+            "1": "2026-11-10",
+            "2": "2026-11-11",
+            "3": "2026-11-12",
+            "4": "2026-11-13"
+        }
+    },
+    "users": [
+        {
+            "id": "918edef7b",
+            "name": "Press",
+            "role": "admin",
+            "salt": "pdulbv16",
+            "pinHash": "29siug034vl"
+        }
+    ],
+    "categories": [
+        {
+            "id": "a9637e47e",
+            "name": "PhotoBooth",
+            "color": "#ff0505"
+        },
+        {
+            "id": "8d953b3e6",
+            "name": "Services",
+            "color": "#ffc800"
+        },
+        {
+            "id": "4f79a37ae",
+            "name": "Games",
+            "color": "#ea580c"
+        },
+        {
+            "id": "7da140983",
+            "name": "Pins & Stickers",
+            "color": "#04d600"
+        },
+        {
+            "id": "3a5b889d4",
+            "name": "Art",
+            "color": "#2563eb"
+        },
+        {
+            "id": "25906adfd",
+            "name": "Keychains",
+            "color": "#f028bb"
+        },
+        {
+            "id": "64c69ef60",
+            "name": "Bracelets",
+            "color": "#7a1dd7"
+        }
+    ],
+    "items": [
+        {
+            "name": "Face paint",
+            "owner": "AMAYA",
+            "price": 20,
+            "qty": null,
+            "category": "8d953b3e6",
+            "id": "9bc2a6a97"
+        },
+        {
+            "name": "PhotoBooth - Soft copy",
+            "owner": "AMAYA",
+            "price": 20,
+            "qty": null,
+            "category": "a9637e47e",
+            "id": "ab5560cea"
+        },
+        {
+            "name": "PhotoBooth - Hard copy",
+            "owner": "AMAYA",
+            "price": 30,
+            "qty": null,
+            "category": "a9637e47e",
+            "id": "3b29f5410"
+        },
+        {
+            "name": "PhotoBooth - Soft + Hard + free sticker",
+            "owner": "AMAYA",
+            "price": 50,
+            "qty": null,
+            "category": "a9637e47e",
+            "id": "05acaaefa"
+        },
+        {
+            "name": "Human Slot Machine",
+            "owner": "AMAYA",
+            "price": 10,
+            "qty": null,
+            "category": "4f79a37ae",
+            "id": "52b1979e0"
+        },
+        {
+            "name": "Spin the Wheel",
+            "owner": "AMAYA",
+            "price": 10,
+            "qty": null,
+            "category": "4f79a37ae",
+            "id": "2b5309236"
+        },
+        {
+            "name": "String Vending Machine",
+            "owner": "AMAYA",
+            "price": 10,
+            "qty": null,
+            "category": "4f79a37ae",
+            "id": "0e3113177"
+        },
+        {
+            "name": "String Vending Machine (P5)",
+            "owner": "AMAYA",
+            "price": 5,
+            "qty": null,
+            "category": "4f79a37ae",
+            "id": "797e5cd21"
+        },
+        {
+            "name": "Cut the Prize",
+            "owner": "AMAYA",
+            "price": 10,
+            "qty": null,
+            "category": "4f79a37ae",
+            "id": "c8ea27370"
+        },
+        {
+            "name": "AMAYA Stickers",
+            "owner": "AMAYA",
+            "price": 5,
+            "qty": null,
+            "category": "7da140983",
+            "id": "7938c4560"
+        },
+        {
+            "name": "Henna Tattoo (P20)",
+            "owner": "Erika",
+            "price": 20,
+            "qty": null,
+            "category": "8d953b3e6",
+            "id": "f56381afd"
+        },
+        {
+            "name": "Henna Tattoo (P25)",
+            "owner": "Erika",
+            "price": 25,
+            "qty": null,
+            "category": "8d953b3e6",
+            "id": "030b8513a"
+        },
+        {
+            "name": "Henna Tattoo (P30)",
+            "owner": "Erika",
+            "price": 30,
+            "qty": null,
+            "category": "8d953b3e6",
+            "id": "8833c1f13"
+        },
+        {
+            "name": "Doodle Art",
+            "owner": "Dan",
+            "price": 20,
+            "qty": null,
+            "category": "3a5b889d4",
+            "id": "54973f339"
+        },
+        {
+            "name": "Portrait drawing \/ frame",
+            "owner": "Dan",
+            "price": 250,
+            "qty": null,
+            "category": "3a5b889d4",
+            "id": "153147238"
+        },
+        {
+            "name": "Pins",
+            "owner": "Khurt",
+            "price": 40,
+            "qty": 63,
+            "category": "7da140983",
+            "id": "1fa517f78"
+        },
+        {
+            "name": "Keychain Bouquet",
+            "owner": "Sofia",
+            "price": 60,
+            "qty": 19,
+            "category": "25906adfd",
+            "id": "be4b7d9fe"
+        },
+        {
+            "name": "Bracelet",
+            "owner": "Sofia",
+            "price": 50,
+            "qty": 63,
+            "category": "64c69ef60",
+            "id": "bc44f33a6"
+        },
+        {
+            "name": "Butterfly keychain",
+            "owner": "Sofia",
+            "price": 60,
+            "qty": 8,
+            "category": "25906adfd",
+            "id": "a9b792ee6"
+        },
+        {
+            "name": "Bracelet (Big)",
+            "owner": "Alyssa",
+            "price": 30,
+            "qty": 12,
+            "category": "64c69ef60",
+            "id": "a218f2b37"
+        },
+        {
+            "name": "Bracelet (Small)",
+            "owner": "Alyssa",
+            "price": 15,
+            "qty": 3,
+            "category": "64c69ef60",
+            "id": "e70a41526"
+        },
+        {
+            "name": "Flower keychain",
+            "owner": "Alyssa",
+            "price": 20,
+            "qty": 3,
+            "category": "25906adfd",
+            "id": "d881920f9"
+        },
+        {
+            "name": "Keychain",
+            "owner": "Alyssa",
+            "price": 20,
+            "qty": 12,
+            "category": "25906adfd",
+            "id": "203fa85bc"
+        },
+        {
+            "name": "Keychain Charms",
+            "owner": "Joshualyn",
+            "price": 50,
+            "qty": 12,
+            "category": "25906adfd",
+            "id": "7a7127758"
+        },
+        {
+            "name": "Memon Cards",
+            "owner": "Mecaela",
+            "price": 20,
+            "qty": 30,
+            "category": "7da140983",
+            "id": "05d14cc75"
+        },
+        {
+            "name": "Customized Stickers",
+            "owner": "Mecaela",
+            "price": 10,
+            "qty": null,
+            "category": "7da140983",
+            "id": "a2c055e55"
+        },
+        {
+            "name": "Bracelet (P30)",
+            "owner": "Therese",
+            "price": 30,
+            "qty": null,
+            "category": "64c69ef60",
+            "id": "9d5f36375"
+        },
+        {
+            "name": "Bracelet (P40)",
+            "owner": "Therese",
+            "price": 40,
+            "qty": null,
+            "category": "64c69ef60",
+            "id": "92b592b01"
+        },
+        {
+            "name": "Bracelet (P50)",
+            "owner": "Therese",
+            "price": 50,
+            "qty": null,
+            "category": "64c69ef60",
+            "id": "94dab360c"
+        },
+        {
+            "name": "Totem of Undying Keychain",
+            "owner": "Shane",
+            "price": 30,
+            "qty": 19,
+            "category": "25906adfd",
+            "id": "56ec79b2c"
+        },
+        {
+            "name": "Anime Eye Keychain",
+            "owner": "Shane",
+            "price": 45,
+            "qty": 8,
+            "category": "25906adfd",
+            "id": "28abd3011"
+        },
+        {
+            "name": "Cat Pin",
+            "owner": "Shane",
+            "price": 30,
+            "qty": 28,
+            "category": "7da140983",
+            "id": "c86aeb6a4"
+        },
+        {
+            "name": "Minions Keychain",
+            "owner": "Shane",
+            "price": 25,
+            "qty": 30,
+            "category": "25906adfd",
+            "id": "11829930e"
+        },
+        {
+            "name": "Cute Animal Keychain",
+            "owner": "Shane",
+            "price": 25,
+            "qty": 27,
+            "category": "25906adfd",
+            "id": "6f4162a62"
+        }
+    ],
+    "sales": []
+}

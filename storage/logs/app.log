@@ -1,0 +1,23 @@
+[2026-11-20 14:23:35] PDOException: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "15"
+LINE 1: ...users SET locked_until = DATE_ADD(NOW(), INTERVAL 15 MINUTE)
+                                                             ^ @ User.php:93
+[2026-11-20 14:23:35] RuntimeException: Something went wrong, please try again. @ Model.php:40
+[2026-11-20 14:23:46] PDOException: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "15"
+LINE 1: ...users SET locked_until = DATE_ADD(NOW(), INTERVAL 15 MINUTE)
+                                                             ^ @ User.php:93
+[2026-11-20 14:23:46] RuntimeException: Something went wrong, please try again. @ Model.php:40
+[2026-11-20 15:17:16] Error: Class "EventDay" not found @ SaleController.php:123
+[2026-11-20 16:14:48] Error: Class "EventDay" not found @ SaleController.php:123
+[2026-11-20 16:14:51] Error: Failed opening required 'C:\laragon\www\BOOTH/views/items_view.php' (include_path='.;C:/laragon/etc/php/pear') @ BaseController.php:40
+[2026-11-20 16:14:57] Error: Class "EventDay" not found @ SaleController.php:123
+[2026-11-20 16:20:30] Error: Call to undefined method Sale::forScope() @ SaleController.php:133
+[2026-11-20 16:20:32] Error: Call to undefined method Item::forManage() @ ItemController.php:22
+[2026-11-20 16:20:34] Error: Call to undefined method Sale::forScope() @ SaleController.php:91
+[2026-11-20 16:20:36] Error: Call to undefined method Sale::forScope() @ SaleController.php:133
+[2026-11-20 16:20:38] Error: Call to undefined method Sale::forScope() @ SaleController.php:91
+[2026-11-20 16:27:32] Error: Call to undefined method Item::forManage() @ ItemController.php:22
+[2026-11-20 18:43:29] Error: Call to undefined method Item::forManage() @ ItemController.php:22
+[2026-11-20 18:45:21] Error: Call to undefined method Item::forManage() @ ItemController.php:22
+[2026-11-20 19:02:21] Error: Failed opening required 'C:\laragon\www\BOOTH/views/items_view.php' (include_path='.;C:/laragon/etc/php/pear') @ BaseController.php:40
+[2026-11-20 19:02:27] Error: Failed opening required 'C:\laragon\www\BOOTH/views/items_view.php' (include_path='.;C:/laragon/etc/php/pear') @ BaseController.php:40
+[2026-11-20 19:05:07] Error: Failed opening required 'C:\laragon\www\BOOTH/views/items_view.php' (include_path='.;C:/laragon/etc/php/pear') @ BaseController.php:40

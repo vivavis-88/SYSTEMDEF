@@ -1,0 +1,18 @@
+/* Login pages. Uses the design tokens from style.css, so all three themes work. */
+.authcard .muted{margin-bottom:var(--s3)}
+.stack{display:grid;gap:var(--s3);text-align:left}
+.authcard .err{text-align:center}
+.authcard .btn.big{margin-top:2px}
+.pick{display:grid;gap:var(--s2);margin:var(--s3) 0 var(--s4);text-align:left}
+.pick a{display:flex;align-items:center;gap:var(--s3);padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--surface-2) 92%,var(--ink-3));color:var(--ink);text-decoration:none;font:500 14px var(--fh);transition:border-color .24s,background .24s,box-shadow .24s,transform .24s var(--ease)}
+.pick a:hover{border-color:var(--ink-3);background:var(--surface-2)}
+.pick a:active,.pick a:focus-visible{border-color:var(--gold-line);box-shadow:0 0 0 1px var(--gold-soft),0 10px 26px -12px var(--gold-line);transform:translateY(-1px)}
+.pick small{display:block;color:var(--ink-3);font:400 12px var(--fb)}
+.avatar{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;flex:none;background:var(--accent);color:var(--on-accent);font:600 14px var(--fh)}
+.linkbtn{display:inline-block;margin-top:var(--s4);color:var(--ink-2);font-size:13px;text-decoration:none;border-bottom:1px solid var(--line)}
+.linkbtn:hover{color:var(--ink);border-color:var(--ink)}
+.pwwrap{position:relative;display:block}
+.pwwrap input{padding-right:64px}
+.pwwrap .eye{position:absolute;right:6px;top:50%;transform:translateY(-50%);padding:4px 10px;border-radius:6px;font:500 12px var(--fh);color:var(--ink-2)}
+.pwwrap .eye:hover{color:var(--ink);background:var(--hover)}
+@media (prefers-reduced-motion:reduce){.authcard,.authcard.shake{animation:none}}

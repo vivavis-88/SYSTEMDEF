@@ -1,0 +1,11 @@
+/* Sidebar links use <a> (real pages) but must look exactly like the original nav buttons in style.css. */
+nav a{position:relative;z-index:1;display:flex;align-items:center;gap:var(--s3);padding:10px var(--s3);border-radius:var(--r-sm);color:var(--ink-2);font:400 13.5px var(--fh);white-space:nowrap;text-align:left;text-decoration:none;transition:background .2s,color .3s,transform .15s}
+nav a:hover:not(.on):not(.soon){background:transparent;color:var(--ink-2)}
+nav a.on{color:var(--on-accent)}
+nav a:active:not(.soon){transform:scale(.95)}
+nav a.soon{opacity:.38;pointer-events:none}
+.who form{display:inline;margin:0}
+/* collapsed sidebar is remembered across pages (class set by the script in header_view.php) */
+html.nav-c .app{grid-template-columns:var(--side-c) 1fr}
+html.nav-c .lbl,html.nav-c .brand b{opacity:0;pointer-events:none}
+@media(max-width:760px){nav a{padding:10px 14px}html.nav-c .app{grid-template-columns:1fr}}
